@@ -1,0 +1,344 @@
+/* Index.html menu ir registracija */
+
+body {
+    padding-top: 50px;
+    background: #ececec;
+    min-width: 100%;
+    height: auto;
+    background-size: cover;
+}
+
+.backgroundLogin {
+    background-image: url("../../assets/images/mainPhoto.jpg");
+}
+
+.spacer {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.block {
+    height: 300px;
+    padding-top: 15px;
+    /* background-color: darkorange; */
+}
+
+.block2 {
+    min-height: 160px;
+    padding-top: 15px;
+}
+
+.center {
+    position: absolute;
+    /*  top: 0;
+      bottom: 0; */
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.navbar-default {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#990ae3), color-stop(60%, #991ae3), to(#990ae3));
+    background-image: -webkit-linear-gradient(#990ae3, #991ae3 60%, #990ae3);
+    background-image: -o-linear-gradient(#990ae3, #991ae3 60%, #990ae3);
+    background-image: linear-gradient(#990ae3, #991ae3 60%, #990ae3);
+    color: #fff;
+}
+
+.navbar-default .navbar-brand, .navbar-default .navbar-nav > li a {
+    color: white;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: black;
+    background-color: #e7e7e7;
+}
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+    color: #ada2a2;
+}
+
+.bg-primary {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#990ae3), color-stop(60%, #991ae3), to(#990ae3));
+    background-image: -webkit-linear-gradient(#990ae3, #991ae3 60%, #990ae3);
+    background-image: -o-linear-gradient(#990ae3, #991ae3 60%, #990ae3);
+    background-image: linear-gradient(#990ae3, #991ae3 60%, #990ae3);
+}
+
+div.editProfile > div > div > legend > p, div.SignupForm > div > div > legend > p, div.EditProfile > div > div > legend > p, div.changePassword > div > div > legend > p {
+    color: white;
+}
+
+/*Comments*/
+
+.bubble {
+    word-wrap: break-word;
+    position: relative;
+    /*width: 580px;*/
+    min-height: 65px;
+    padding: 15px;
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+/**/
+
+.post-actions {
+    margin: 5px;
+}
+
+.comment-form .form-group {
+    width: 90%;
+}
+
+.comment {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 3px;
+    margin: 5px 0;
+    overflow: auto;
+    width: 100%;
+}
+
+.comment-form input[type="text"] {
+    width: 100%;
+}
+
+.comment-avatar img {
+    width: 40px;
+    margin-right: 5px;
+}
+
+/*profile options*/
+.options {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    margin-bottom: 10px;
+}
+
+/*Pop Up test*/
+
+#lightbox {
+    visibility: hidden;
+    position: relative;
+    background: red;
+    border: 2px solid #3c3c3c;
+    color: white;
+    z-index: 100;
+
+    padding: 20px;
+}
+
+.dimmer {
+    background: #000;
+    position: absolute;
+    opacity: .5;
+    top: 0;
+    z-index: 99;
+}
+
+.requestFlag {
+    color: red;
+    background: red !important;
+}
+
+/*Message system*/
+/*login*/
+.login-container {
+    display: block;
+    width: 330px;
+    height: 350px;
+    padding: 0 20px 20px 20px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    /*verticaly center*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -165px;
+    margin-left: -165px;
+}
+
+::-webkit-scrollbar {
+    height: 10px;
+    width: 10px;
+    background: #FFF;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #BBB;
+    border: solid 2px #FFF;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #888;
+}
+
+::-moz-scrollbar {
+    height: 10px;
+    width: 10px;
+    background: #FFF;
+}
+
+::-moz-scrollbar-thumb {
+    background: #BBB;
+    border: solid 2px #FFF;
+}
+
+::-moz-scrollbar-thumb:hover {
+    background: #888;
+}
+
+/*message*/
+.message-body {
+    display: block;
+    height: 600px;
+    width: 70%;
+    margin: 0px auto;
+    border: 1px solid #ccc;
+}
+
+.message-left {
+    display: block;
+    height: 100%;
+    width: 30%;
+    float: left;
+    overflow-y: scroll;
+    border-right: 1px solid #ccc;
+}
+
+.message-right {
+    display: block;
+    height: 100%;
+    width: 70%;
+    float: left;
+}
+
+.message-left ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.message-left ul a {
+    text-decoration: none;
+}
+
+.message-left ul a li {
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+    font-weight: bold;
+    color: black;
+}
+
+.message-left ul a li img {
+    height: 50px;
+    width: 50px;
+}
+
+.message-left ul a li:hover {
+    background: #702596;
+}
+
+.message-left ul a li:active {
+    background: yellow;
+}
+
+.message-right .display-message {
+    display: block;
+    height: 80%;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    overflow-y: scroll;
+}
+
+.message-right .send-message {
+    height: 20%;
+    background: #eee;
+    padding: 10px;
+}
+
+.display-message .message {
+    min-height: 60px;
+    padding: 5px;
+}
+
+.message .img-con {
+    width: 10%;
+    float: left;
+    height: inherit;
+}
+
+.message .img-con > img {
+    height: 50px;
+    width: 50px;
+}
+
+.message .text-con {
+    width: 90%;
+    float: left;
+    height: inherit;
+}
+
+hr {
+    margin-top: 0;
+    margin-bottom: 0;
+    border-top: 1px solid #ccc;
+}
+/*photos*/
+.photos{
+    margin: 0;
+    padding: 0;
+}
+
+.photos li{
+    list-style: none;
+    float: left;
+    margin:5px;
+    width: 23%;
+}
+
+.photos img{
+    width:100%;
+    /*max-width: 300px;*/
+    min-height: 250px;
+    max-height: 250px ;
+    object-fit: contain;
+}
+/*youtube resize*/
+.video-container {
+    position:relative;
+    padding-bottom:56.25%;
+    padding-top:30px;
+    height:0;
+    overflow:hidden;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+    div.form-group label.control-label.col-sm-3 {
+        display: none;
+    }
+    #navbar-main{
+        font-size: 12px;
+    }
+    body > section:nth-child(2){
+        padding-top: 50px;
+    }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+    div.form-group label.control-label.col-sm-3 {
+        display: none;
+    }
+}
+
